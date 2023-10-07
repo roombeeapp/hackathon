@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct HomepageView: View {
+    var calGrid: GridView
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            calGrid
+        }
     }
 }
 
 struct HomepageView_Previews: PreviewProvider {
     static var previews: some View {
-        HomepageView()
+        HomepageView(calGrid: GridView(cal: CalendarView(title: "Me"), cal2: CalendarView(title: "Roomate")))
     }
 }
