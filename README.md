@@ -1,2 +1,3 @@
 # hackathon
-progress from hackathon 
+- all progress from hackathon
+- toggles, simple calendar view, login page
