@@ -63,9 +63,9 @@ struct SignUp: View {
                         Text(isSignUp ? "Already have an account? Login!" : "Don't have an account? Sign Up!")
                     }
                 }
-                NavigationLink(destination: HomepageView(calGrid: GridView(cal: CalendarView(title: String()), cal2: CalendarView(title: String()))), isActive: $navigateToHomepage) {
-                                    EmptyView()  // This won't display anything but is necessary for the programmatic navigation
-                                }
+//                NavigationLink(destination: HomepageView(calGrid: GridView(cal: CalendarView(title: String()), cal2: CalendarView(title: String()))), isActive: $navigateToHomepage) {
+//                                    EmptyView()  // This won't display anything but is necessary for the programmatic navigation
+//                                }
             }
             .navigationBarHidden(true)
         }
