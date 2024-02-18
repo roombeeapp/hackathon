@@ -1,13 +1,4 @@
-Alina:
-	https://www.thegarage.northwestern.edu/programs/propel
-	are we still meeting tmr? and any chance we can do 4
-
-Allison Bai:
-	I can’t do 4, but yes standup tmrw at 3:30pm on zoom! Max 15 min
-
-Adwait Ganguly:
-	https://www.dropbox.com/scl/fi/0chagzl8snapgowtjn434/project01-part01.pdf?rlkey=4df6py8390hqtpaqgsqd9n8ra&e=1&dl=0
-	# Xcode
+# Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
@@ -15,7 +6,7 @@ Adwait Ganguly:
 build/
 DerivedData/
 .DS_Store
-UserInterfaceState.xcuserstate
+UserInterfaceState.xcuserstate 
 
 ## Various settings
 *.pbxuser
