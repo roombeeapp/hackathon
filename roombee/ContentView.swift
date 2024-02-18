@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isTimerDone = false
     var ourPurple = hexStringToUIColor(hex: "#381e38")
     var body: some View {
-        ZStack{
-            Color(ourPurple).ignoresSafeArea()
-            VStack {
-                Text("Roombee").font(.largeTitle).bold().foregroundColor(.yellow)
+        if isTimerDone {
+            NavigationView {
+                            SignUp() // Using the SignUp view
+                        }
+        }
+        else {
+            ZStack{
+                Color(ourPurple).ignoresSafeArea()
+                VStack {
+                    Text("Roombee").font(.largeTitle).bold().foregroundColor(.yellow)
+                }
             }
-            .padding()
+            .onAppear() {
+                Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
+                // Set the state variable to true after 3 seconds
+                isTimerDone = true
+                }
+            }
         }
     }
 }
