@@ -51,7 +51,7 @@ struct SignUp: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     
-                    Button(action: isSignUp ? signUp : login) {
+                    NavigationLink(destination:  HomepageView(calGrid: GridView(cal: CalendarView(title: "Me"), cal2: CalendarView(title: "Roomate")), yourStatus: StatusView(title: "Me:"), roomStatus: StatusView(title: "Roommate:"))) {
                         Text(isSignUp ? "Sign Up" : "Login")
                     }
                     
