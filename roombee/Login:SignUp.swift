@@ -55,8 +55,6 @@ struct SignUp: View {
                         Text(isSignUp ? "Sign Up" : "Login")
                     }
                     
-
-                    
                     Button(action: {
                         isSignUp.toggle()
                     }) {
@@ -72,7 +70,6 @@ struct SignUp: View {
     }
     
     func signUp() {
-        // Your sign-up logic
     }
 
     func login() {
